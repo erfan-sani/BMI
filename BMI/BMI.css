@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#result {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#chart {
+    height: 15px;
+    background: linear-gradient(to right, 
+        #4fc3f7, #66bb6a, #ffee58, #ff7043);
+    border-radius: 5px;
+    margin: 15px 0;
+    position: relative;
+}
+
+#marker {
+    position: absolute;
+    top: -8px;
+    width: 2px;
+    height: 30px;
+    background: black;
+    display: none;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+    
+    .box {
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    button {
+        padding: 10px;
+    }
+    
+    .labels span {
+        font-size: 0.7rem;
+    }
+}
